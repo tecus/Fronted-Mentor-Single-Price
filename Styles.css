@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+:root{
+  --Cyan: hsl(179, 62%, 43%);
+	--Cyan1: hsl(179, 50%, 50%);
+  --light_Cyan: hsl(179, 62%, 83%);
+  --Bright_Yellow: hsl(71, 73%, 54%);
+  --Light_Gray: hsl(204, 43%, 93%);
+  --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+body{
+	padding: 0;
+	margin: 0;
+  background-color: var(--Light_Gray);
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+.main{
+  background-color: white;
+	margin: 72px auto;
+  width: 313px;
+  height: 722px;
+  margin: 72px auto;
+  display: flex;
+  flex-direction: column;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.community{
+  padding: 10px 24px 24px 24px;
+  height: 267px;
+  box-sizing: border-box;
+}
+.title-community{
+  font-size: 1.2em;
+  color: var(--Cyan);
+}
+.free{
+  color: var(--Bright_Yellow);
+  font-size: 1em;
+  margin: 25px 0 12px 0;
+}
+.description-community{
+  color: var(--Grayish_Blue);
+  font-size: 0.86em;
+  line-height: 27px;
+  margin-top: 16px;
+}
+
+
+.monthly{
+  background-color: var(--Cyan);
+  padding: 12px 24px 24px 24px;
+  height: 230px;
+  color: var(--Light_Gray);
+	box-sizing: border-box;
+}
+.title-monthly{
+  font-size: 1.1em;
+  margin-bottom: 17px;
+}
+.price{
+  font-size: 1.95em;
+	font-weight: 700;
+}
+.price-payment{
+	display: flex;
+
+}
+.payment{
+  margin: 10px 12px;
+  font-weight: 300;
+}
+
+.description-monthly{
+	margin-top: 4px;
+	
+}
+.btn{
+  background-color: var(--Bright_Yellow);
+	color: #fff;
+	width: 100%;
+	height: 48px;
+  border-radius: 5px;
+  border-style: none;
+	font-size: 0.95em;
+	margin-top: 13px;
+}
+.why_us{
+  color: var(--Light_Gray);
+	background-color: var(--Cyan1);
+  height: 230px;
+}
+.title-why{
+  font-size: 1.1em;
+	margin: 25px 25px 18px;
+}
+
+.lista{
+  margin-left: -15px;
+  font-size: 0.85em;
+  line-height: 20px;
+	list-style-type: none;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 700px){
+  .main{
+		margin: 162px auto 100px;
+    width: 637px;
+    height: 476px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .community{
+    grid-column: 1 /3 ;
+    padding: 20px 35px 35px 35px;
+    height: 217px; 
+  }
+  .title-community{
+    font-size: 1.47em;
+  }
+  .free{
+    font-size: 1.1em;
+    margin-top: 25px
+  }
+  .description-community{
+    font-size: 1em;
+    line-height: 27px;
+    margin-top: 9px;
+  }
+
+  .monthly{
+    background-color: var(--Cyan);
+    padding: 22px 35px 35px 35px;
+    height: 258px;
+  }
+  .title-monthly{
+    font-size: 1.1em;
+  }
+  .description-monthly{
+    font-size: 0.95em;
+		margin-top: 12px;
+  }
+  .why_us{
+    height: 258px; 
+  }
+	.title-why{
+		margin: 38px 38px 20px;
+	}
+	.lista{
+		margin-left: -2px;
+	}
+}
